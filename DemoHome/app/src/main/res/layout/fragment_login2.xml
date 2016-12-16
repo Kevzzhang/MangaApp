@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="16dp"
+  tools:context="com.example.davidbezalellaoli.demohome.view.fragments.auth.LoginFragment"
+  android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_sixtyone"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id='@+id/input_layout_email'
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType='textEmailAddress'
+            android:hint='Email'
+            android:textSize="15dp"
+            android:ems='10'
+            android:id='@+id/login_txtemail'
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id='@+id/input_layout_password'
+        android:layout_width='match_parent'
+        android:layout_height='wrap_content'
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType='textPassword'
+            android:hint='Password'
+            android:textSize="15dp"
+            android:ems='10'
+            android:id='@+id/login_txtpassword'
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Have no account? Register NOW!"
+        android:id="@+id/login_txtredirectregister"
+        android:layout_marginTop="40dp"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:background="#1E88E5"
+        android:text="Login"
+        android:id="@+id/login_btnlogin"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

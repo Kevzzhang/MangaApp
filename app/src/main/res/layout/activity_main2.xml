@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/MangaCover"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/MangaCover">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/txtmangatitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Name"
+                android:text="Naruto"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/Author"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Author :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/Name"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Author"
+                android:layout_below="@+id/txtmangatitle"
+                android:gravity="left"
+                android:text="Naruto"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/Chapter"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Chapter :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/Author"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Author"
+                android:layout_below="@+id/txtAuthor"
+                android:gravity="left"
+                android:text="200"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtChapter"
+            android:text="Chapter"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chapListView"
+            android:layout_below="@+id/txtChapter">
+
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
